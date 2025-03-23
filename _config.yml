@@ -4,8 +4,7 @@ theme: just-the-docs
 
 url: https://zenova-com-tw.github.io/docs
 
-aux_links: # remove if you don't want this link to appear on your pages
-  Template Repository: https://zenova-com-tw.github.io/docs
+
 # 開啟搜尋
 just_the_docs:
   search_enabled: true

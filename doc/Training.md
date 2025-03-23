@@ -1,7 +1,7 @@
 ---
 title: 3. ZeroMES 整體架構說明
 nav_order: 3
-parent: Zenova Centre
+parent: 文件中心
 ---
 
 ### ✅ **一、整體架構說明與角色**

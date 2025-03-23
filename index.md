@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Zenova Centre
+title: 文件中心
 nav_order: 1
 has_children: true
 ---
