@@ -1,5 +1,5 @@
 ---
-title: 在 NuGet 中添加來源
+title: 1. 在 NuGet 中添加來源
 nav_order: 1
 parent: Zenova Centre
 ---
