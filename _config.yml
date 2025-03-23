@@ -2,8 +2,8 @@ title: Zenova Centre
 description: Zenova 的文件中心
 theme: just-the-docs
 
-# baseurl 請依實際 repo 名稱調整（你的是 /document）
-baseurl: "/document"
+# baseurl 請依實際 repo 名稱調整（你的是 /docs）
+baseurl: "/docs"
 
 # 開啟搜尋
 just_the_docs:
