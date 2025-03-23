@@ -1,35 +1,79 @@
 ---
-title: Home
 layout: home
+title: Zenova Centre
+nav_order: 1
+has_children: true
 ---
 
-This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
+### **公司簡介：Zenova 元訊智慧服務**
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
+---
 
-More specifically, the created site:
+#### **公司的故事**
+Zenova 元訊智慧服務成立於對數位轉型充滿熱情的團隊之手，我們起初專注於為製造業提供客製化的智慧工廠解決方案，逐步拓展至多個產業。憑藉敏捷開發與深厚的顧問背景，Zenova 致力於協助企業走向數位轉型，成為智慧企業的推手。
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
+---
 
-Other than that, you're free to customize sites that you create with this template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
+#### **公司規模與專注領域 (Domain)**
+- 員工人數：8人核心團隊，涵蓋系統分析、前後端開發、UIUX設計與專案管理
+- 專注領域：製造業、醫療耗材、電子業、設備商、工業自動化
+- 核心技術：.NET 平台、DevOps 自動化部署、雲端整合（Azure / AWS/ GCP）
 
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
+---
 
-To get started with creating a site, simply:
+#### **團隊背景與服務能量**
+Zenova 的核心顧問團隊擁有超過 20 年製造業數位轉型與 MES 導入經驗，橫跨半導體、電子製造、新能源、精密機械、製藥等產業，具備台灣與東南亞地區（如泰國、越南）的跨國專案實績。我們提供的專業能量包括：
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
+- **MES 導入全模組經驗**：包含在製品、工單、物料、設備、品質、WMS、排程、SPC 等核心模組。
+- **設備與 IoT 整合能力**：熟悉 SECS/GEM、PLC、OPC UA、IoT，支援自動採集、設備聯網、異常預測與能耗分析。
+- **系統架構設計專業**：精通 .NET 平台、服務導向設計、事件驅動設計，搭配 DevOps 與 CI/CD 實踐。
+- **企業系統整合能力**：具備與 ERP、SCADA、PLM 等異質系統整合經驗，促進資訊流整合與決策效率。
+- **客製專案與顧問服務經驗**：涵蓋售前需求分析、POC驗證、系統部署與版本維護，建立完整 SOP 與 SLA 管理。
+- **AI 與 MES 應用實踐**：投入智慧排程、設備異常預測、數據可視化與維修優化等工業 4.0 應用場景。
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo) in the template README.
+---
 
-----
+#### **輔導經驗**
+- 中大型製造企業 MES 導入與流程數位化
+- 多工廠數據整合與設備自動化專案規劃
+- 協助中小企業建立從地端到雲端的數位流程
+- 顧問角色支援內部 IT 團隊進行系統導入、技術培訓與敏捷轉型
 
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
+---
 
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[Jekyll]: https://jekyllrb.com
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
+#### **產品清單**
+- **ZeroMES**：模組化智慧製造執行系統，支援多工廠、多語系、多租戶
+- **客製化開發服務**：根據產業需求提供專案型系統建置與整合
+
+---
+
+#### **市場定位**
+Zenova 以「技術顧問公司 + 軟體產品開發商」的雙軌定位，專注於為客戶提供靈活、模組化、可擴展的數位解決方案。我們從顧問角度切入，深入理解流程與痛點，打造適配度高的解決方案，加速客戶的轉型進程。
+
+---
+
+#### **與其他產品的差異**
+- 高模組化設計，彈性拆裝，支援快速導入
+- 提供完整 API 串接，便於企業內部系統整合
+- 支援私有雲、公有雲與混合雲部署
+- 強調顧問式導入與客製化調整
+- 注重使用者體驗與前端互動設計
+
+---
+
+#### **技術核心：雲端導向**
+- 雲原生架構，支援跨平台 Web/Mobile 操作
+- 採用微服務與事件驅動架構設計，支援彈性擴展
+- CI/CD 自動化部署，確保版本一致性與快速發布
+- 支援 Azure、AWS、GCP 等主流雲平台
+
+---
+
+#### **我們是一間顧問公司，也是一間數位轉型的實踐者**
+我們相信數位轉型不是購買一套系統，而是企業文化與流程的全面升級。Zenova 將以技術與顧問經驗為基礎，協助企業打造真正屬於自己的智慧工廠與數位作業平台，成為長期信賴的合作夥伴。
+
+
+---
+
+## 📚 文件清單
+這是我們的教學文件集合，可從左側選單點選進入。

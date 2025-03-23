@@ -1,0 +1,94 @@
+---
+title: 如何在 GitHub 取得 Personal Access Token (PAT) 來存取 NuGet Packages
+nav_order: 2
+parent: 文件清單
+---
+
+### 🔑 **如何在 GitHub 取得 Personal Access Token (PAT) 來存取 NuGet Packages**
+GitHub Packages 需要 **Personal Access Token (PAT)** 來進行身份驗證，以便下載或上傳 NuGet 套件。以下是產生 PAT 的詳細步驟：
+
+---
+
+### 1️⃣ **前往 GitHub Personal Access Token 設定頁面**
+1. 登入你的 GitHub 帳號。
+2. 點擊右上角的個人頭像，然後選擇 **Settings（設定）**。
+3. 在左側選單中，找到 **Developer settings（開發者設定）**。
+4. 點擊 **Personal access tokens（個人存取權杖）**。
+5. 選擇 **Fine-grained tokens（細粒度權杖）**（⚠️ **新版 PAT**，建議使用這個）。
+6. 點擊 **Generate new token（產生新的權杖）**。
+
+---
+
+### 2️⃣ **設定 PAT 權限**
+在產生新的 **Personal Access Token (PAT)** 時，請設定以下內容：
+
+#### 📌 **基本設定**
+- **Token name（名稱）** → 例如：`NuGet-GitHub-Package`
+- **Expiration（有效期限）** → 建議選擇 **No expiration**（無到期日）或適當的時間，避免頻繁更新。
+- **Repository access（存取權限）** → 選擇你的 GitHub 組織或個人倉庫。
+  
+#### 📌 **選擇權限（Scopes）**
+勾選 **以下權限** 來存取 GitHub Packages：
+- ✅ `read:packages` → **讀取 NuGet 套件**
+- ✅ `write:packages` → **發佈 NuGet 套件（如果你要上傳套件）`
+- ✅ `delete:packages` → **刪除 NuGet 套件（可選）`
+- ✅ `repo`（如果你的 NuGet 套件是 Private，需要此權限）
+
+---
+
+### 3️⃣ **產生 PAT 並複製**
+1. 確認權限後，點擊 **Generate token（產生權杖）**。
+2. **⚠️ <font color='Red'>請立即複製 PAT**，因為之後無法再次查看。</font>
+
+---
+
+### 4️⃣ **使用 PAT 存取 GitHub NuGet Packages**
+#### **在 `nuget.config` 中設定**
+將 PAT 添加到你的 `nuget.config` 來進行身份驗證：
+
+```xml
+<packageSources>
+  <add key="github-zenova" value="https://nuget.pkg.github.com/zenova-com-tw/index.json" />
+</packageSources>
+<packageSourceCredentials>
+  <github-zenova>
+    <add key="Username" value="USERNAME" />
+    <add key="ClearTextPassword" value="YOUR_GITHUB_PERSONAL_ACCESS_TOKEN" />
+  </github-zenova>
+</packageSourceCredentials>
+```
+
+> ⚠️ `USERNAME` 可以填 `"USERNAME"`，但 GitHub 其實 **不驗證帳號名稱**，重要的是 `PAT`。
+
+---
+
+#### **在 `dotnet CLI` 設定 NuGet Source**
+```sh
+dotnet nuget add source "https://nuget.pkg.github.com/zenova-com-tw/index.json" \
+    --name "github-zenova" \
+    --username "USERNAME" \
+    --password "YOUR_GITHUB_PERSONAL_ACCESS_TOKEN" \
+    --store-password-in-clear-text
+```
+
+---
+
+### 🎯 **成功驗證方式**
+1. 在 **Visual Studio** 或 **CLI** 執行：
+   ```sh
+   dotnet nuget list source
+   ```
+   確認 `github-zenova` 是否存在。
+2. 在 Visual Studio **NuGet 套件管理員** 搜尋你的 GitHub 套件，看是否能正常下載。
+
+---
+
+### ✅ **總結**
+| 步驟 | 操作 |
+|------|------|
+| **產生 PAT** | 前往 GitHub **Settings → Developer settings → Personal access tokens** |
+| **設定權限** | `read:packages`（下載），`write:packages`（上傳），`repo`（私有套件需要） |
+| **使用 PAT 登入 NuGet** | 在 `nuget.config` 或 `dotnet nuget add source` 中設定 |
+| **測試 NuGet** | `dotnet nuget list source` 或 Visual Studio 測試 |
+
+這樣就完成 **GitHub NuGet 套件的身份驗證**，你可以開始拉取或發佈 NuGet 套件！🚀
