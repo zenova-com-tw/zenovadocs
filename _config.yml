@@ -4,7 +4,7 @@ theme: just-the-docs
 
 url: https://zenova-com-tw.github.io/docs
 
-
+footer_content: "致力於幫助企業進行數位轉型，降低數位化門檻，讓生產管理更智慧、高效。"
 # 開啟搜尋
 just_the_docs:
   search_enabled: true
