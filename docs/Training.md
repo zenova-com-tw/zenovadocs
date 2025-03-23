@@ -1,3 +1,9 @@
+---
+title: 整體架構說明
+nav_order: 3
+parent: Zenova Centre
+---
+
 ### ✅ **一、整體架構說明與角色**
 ---
 

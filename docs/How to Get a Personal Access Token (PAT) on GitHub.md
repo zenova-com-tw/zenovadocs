@@ -1,7 +1,7 @@
 ---
 title: 如何在 GitHub 取得 Personal Access Token (PAT) 來存取 NuGet Packages
 nav_order: 2
-parent: 文件清單
+parent: Zenova Centre
 ---
 
 ### 🔑 **如何在 GitHub 取得 Personal Access Token (PAT) 來存取 NuGet Packages**

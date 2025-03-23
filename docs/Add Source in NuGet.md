@@ -1,7 +1,7 @@
 ---
 title: 在 NuGet 中添加來源
 nav_order: 1
-parent: 文件清單
+parent: Zenova Centre
 ---
 
 在 **NuGet** 中新增 **Source（來源）** 的方法有幾種方式，包括使用 **Visual Studio GUI**、**dotnet CLI** 或直接編輯 `nuget.config` 文件。以下是詳細步驟：
