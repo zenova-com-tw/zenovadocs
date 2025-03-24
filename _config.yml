@@ -7,3 +7,8 @@ url: https://zenova-com-tw.github.io/docs
 # 開啟搜尋
 just_the_docs:
   search_enabled: true
+  show_sidebar: true
+  collections:
+    docs:
+      output: true
+      permalink: /:collection/:path/
