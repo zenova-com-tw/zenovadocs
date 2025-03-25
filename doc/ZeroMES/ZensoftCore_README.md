@@ -1,7 +1,7 @@
 ---
 title: Zensoft.Core 技術說明
-nav_order: 1
-parent: ZeroMES
+nav_order: 3
+parent: ZeroMES 架構文件
 grand_parent: 文件中心
 ---
 
