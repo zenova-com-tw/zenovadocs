@@ -15,6 +15,3 @@ just_the_docs:
       output: true
       permalink: /:collection/:path/
       
-# Add the jekyll-mermaid plugin
-plugins:
-  - jekyll-mermaid
