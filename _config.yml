@@ -4,14 +4,15 @@ remote_theme: just-the-docs/just-the-docs
 
 url: https://zenova-com-tw.github.io/docs
 
-# 開啟搜尋
+# Mermaid 支援
+mermaid:
+  version: "10.9.0"
+
+# Just the Docs 自訂設定
 just_the_docs:
   search_enabled: true
   show_sidebar: true
-  mermaid:
-    enabled: true
   collections:
     docs:
       output: true
       permalink: /:collection/:path/
-      
