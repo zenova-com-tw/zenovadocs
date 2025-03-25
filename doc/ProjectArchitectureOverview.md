@@ -7,9 +7,20 @@ parent: 文件中心
 ### 🏗️ 專案整體架構概覽
 
 **解決方案名稱：Zensoft.sln**  
-以多層架構（Multi-layer Architecture）進行分層，包含以下主要模組：
+以多層架構（Multi-layer Architecture）進行分層：
 
+```mermaid
+graph TD
+    UI[🔹 UI Layer<br/>Zensoft.Web.Host / Client]
+    API[🔹 API Layer<br/>Zensoft.SYS.API / ZeroMES.WIP.API]
+    Service[🔹 Service Layer<br/>Zensoft.SYS.Services / ZeroMES.WIP.Services]
+    Repo[🔹 Repository Layer<br/>Zensoft.SYS.Repositories / ZeroMES.WIP.Repositories]
+    Infra[🔹 Infrastructure Layer<br/>Zensoft.EFCore / Events / Infra]
+
+    UI --> API --> Service --> Repo --> Infra
+```
 ---
+包含以下主要模組:
 
 ### 🔹 基礎核心模組
 
