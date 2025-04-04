@@ -2,7 +2,7 @@
 title: 資料庫管理
 nav_order: 1
 parent: 開發相關內容
-has_children: false
+has_children: true
 ---
 
 # 資料庫管理

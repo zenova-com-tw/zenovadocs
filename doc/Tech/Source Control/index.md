@@ -2,7 +2,7 @@
 title: 原始碼管理
 nav_order: 2
 parent: 開發相關內容
-has_children: false
+has_children: true
 ---
 
 # 原始碼管理
